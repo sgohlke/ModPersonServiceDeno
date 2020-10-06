@@ -1,8 +1,7 @@
-import {
-  assertEquals, assertArrayContains
-} from 'https://deno.land/std@0.67.0/testing/asserts.ts';
+
 import { Person } from './personservice.ts';
 import { PersonService } from './personservice.ts';
+import { assertEquals, assertArrayContains } from './deps.ts';
 
 Deno.test("Create a test Person object", () => {
   const person = new Person(1, 'McGulley', 'Mike', 43)
