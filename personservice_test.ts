@@ -1,6 +1,6 @@
 import { Person } from "./personservice.ts";
 import { PersonService } from "./personservice.ts";
-import { assertArrayContains, assertEquals } from "./deps.ts";
+import { assertArrayIncludes, assertEquals } from "./deps.ts";
 
 Deno.test("Create a test Person object", () => {
   const person = new Person(1, "McGulley", "Mike", 43);
@@ -13,12 +13,12 @@ Deno.test("Create a test Person object", () => {
 Deno.test("All persons are returned", () => {
   const personList = PersonService.getAllPersons();
   assertEquals(personList.length, 3);
-  assertArrayContains<Person>(personList, [new Person(1, "Meier", "Hans", 40)]);
-  assertArrayContains<Person>(
+  assertArrayIncludes<Person>(personList, [new Person(1, "Meier", "Hans", 40)]);
+  assertArrayIncludes<Person>(
     personList,
     [new Person(2, "Mahler", "Sandra", 32)],
   );
-  assertArrayContains<Person>(
+  assertArrayIncludes<Person>(
     personList,
     [new Person(3, "Huber", "Franz", 56)],
   );
