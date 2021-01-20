@@ -1,4 +1,4 @@
 export {
   assertArrayIncludes,
   assertEquals,
-} from "https://deno.land/std@0.81.0/testing/asserts.ts";
+} from "https://deno.land/std@0.84.0/testing/asserts.ts";
