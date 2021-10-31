@@ -17,5 +17,5 @@ jobs:
           path: ~/.cache/deno/deps/https
           key: deno-https/v1-${{ github.sha }}
           restore-keys: deno-https/v1-    
-      - run: deno lint --unstable
+      - run: deno lint
       - run: deno test
