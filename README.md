@@ -5,4 +5,4 @@ Module for PersonService using Deno
 Only tests are executable. To run tests execute **deno test**.
 
 ## Lint
-To check for linting issues execute **deno lint --unstable**.
+To check for linting issues execute **deno lint**.
