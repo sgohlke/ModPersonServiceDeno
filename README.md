@@ -1,5 +1,5 @@
 # ModPersonServiceDeno
-Module for PersonService using Deno
+Module for PersonService using Deno.
 
 ## Run
 Only tests are executable. To run tests execute **deno test**.
