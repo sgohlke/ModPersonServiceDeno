@@ -3,14 +3,14 @@ on:
   push:
 
 jobs:
-  rpgts:
+  personservice:
     name: Install
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: denoland/setup-deno@v1
         with:
-          deno-version: '1.27.1'
+          deno-version: '1.29.1'
       - name: Cache https://
         uses: actions/cache@v2
         with:
