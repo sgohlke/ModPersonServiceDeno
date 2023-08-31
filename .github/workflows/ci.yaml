@@ -25,6 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: personservice
     steps:
+      - uses: actions/checkout@v3
       - uses: denoland/setup-deno@v1
         with:
           deno-version: '1.36.3'
