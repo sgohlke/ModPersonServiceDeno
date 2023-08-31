@@ -46,4 +46,4 @@ jobs:
       - name: npm build
         run: deno run -A ./scripts/build_npm.ts ${{steps.get_tag_version.outputs.TAG_VERSION}} 
       - name: Build package
-        run: npm pack
+        run: cd npm && npm pack
