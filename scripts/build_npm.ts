@@ -1,5 +1,5 @@
 // ex. scripts/build_npm.ts
-import { build, emptyDir } from "https://deno.land/x/dnt/mod.ts";
+import { build, emptyDir } from "https://deno.land/x/dnt@0.38.1/mod.ts";
 
 await emptyDir("./npm");
 
@@ -13,7 +13,7 @@ await build({
   package: {
     // package.json properties
     name: "@sgohlke/person-service",
-    version: Deno.args[0],
+    version: Deno.args[0] ?? '0.0.1',
     description: "Example code for Person Service Demo module",
     license: "MIT",
     repository: {
