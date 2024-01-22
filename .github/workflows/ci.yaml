@@ -12,7 +12,7 @@ jobs:
         with:
           deno-version: '1.38.5'
       - name: Cache https://
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ~/.cache/deno/deps/https
           key: deno-https/v1-${{ github.sha }}
