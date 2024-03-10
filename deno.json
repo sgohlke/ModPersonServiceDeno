@@ -1,6 +1,7 @@
 {
    "tasks": {
       "coverage": "deno test --coverage=covresults && deno coverage covresults",
+      "dnt": "deno run -A scripts/build_npm.ts 0.1.0",
       "format": "deno fmt --options-indent-width=3 --options-single-quote --options-no-semicolons",
       "lint": "deno lint",
       "test": "deno test"
