@@ -1,6 +1,6 @@
 import { Person } from './personservice.ts'
 import { PersonService } from './personservice.ts'
-import { assertArrayIncludes, assertEquals } from './deps.ts'
+import { assertArrayIncludes, assertEquals } from './dev_deps.ts'
 
 Deno.test('Create a test Person object', () => {
    const person = new Person(1, 'McGulley', 'Mike', 43)
