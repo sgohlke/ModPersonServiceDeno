@@ -1,4 +1,4 @@
 export {
    assertArrayIncludes,
    assertEquals,
-} from 'jsr:@std/assert'
+} from 'https://deno.land/std@0.224.0/assert/mod.ts'
